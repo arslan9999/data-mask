@@ -1,0 +1,264 @@
+{
+  "masking_levels": {
+    "low": [
+      {
+        "field_name": "id",
+        "masking_type": "partial",
+        "masking_pattern": "XXX-XX-XXX",
+        "visible_start": 3,
+        "visible_end": 3
+      },
+      {
+        "field_name": "gender",
+        "masking_type": "none"
+      },
+      {
+        "field_name": "birthdate",
+        "masking_type": "scramble"
+      },
+      {
+        "field_name": "maiden_name",
+        "masking_type": "partial",
+        "visible_start": 1,
+        "visible_end": 1
+      },
+      {
+        "field_name": "lname",
+        "masking_type": "partial",
+        "visible_start": 1,
+        "visible_end": 1
+      },
+      {
+        "field_name": "fname",
+        "masking_type": "partial",
+        "visible_start": 1,
+        "visible_end": 1
+      },
+      {
+        "field_name": "address",
+        "masking_type": "partial",
+        "visible_start": 5,
+        "visible_end": 5
+      },
+      {
+        "field_name": "city",
+        "masking_type": "partial",
+        "visible_start": 2,
+        "visible_end": 2
+      },
+      {
+        "field_name": "state",
+        "masking_type": "none"
+      },
+      {
+        "field_name": "zip",
+        "masking_type": "partial",
+        "visible_start": 2,
+        "visible_end": 2
+      },
+      {
+        "field_name": "phone",
+        "masking_type": "partial",
+        "visible_start": 3,
+        "visible_end": 4
+      },
+      {
+        "field_name": "email",
+        "masking_type": "regex",
+        "masking_regex": "([^@]+)@.*",
+        "replacement": "****@masked.com"
+      },
+      {
+        "field_name": "cc",
+        "masking_type": "none"
+      },
+      {
+        "field_name": "cc_number",
+        "masking_type": "partial",
+        "visible_start": 4,
+        "visible_end": 4
+      },
+      {
+        "field_name": "cc_cvc",
+        "masking_type": "fixed",
+        "masking_value": "***"
+      },
+      {
+        "field_name": "cc_expiredate",
+        "masking_type": "scramble"
+      },
+      {
+        "field_name": "cc_type",
+        "masking_type": "none"
+      }
+    ],
+    "medium": [
+      {
+        "field_name": "id",
+        "masking_type": "partial",
+        "masking_pattern": "XXX-XX-XXX",
+        "visible_start": 2,
+        "visible_end": 2
+      },
+      {
+        "field_name": "gender",
+        "masking_type": "none"
+      },
+      {
+        "field_name": "birthdate",
+        "masking_type": "scramble"
+      },
+      {
+        "field_name": "maiden_name",
+        "masking_type": "partial",
+        "visible_start": 1,
+        "visible_end": 0
+      },
+      {
+        "field_name": "lname",
+        "masking_type": "partial",
+        "visible_start": 1,
+        "visible_end": 0
+      },
+      {
+        "field_name": "fname",
+        "masking_type": "partial",
+        "visible_start": 1,
+        "visible_end": 0
+      },
+      {
+        "field_name": "address",
+        "masking_type": "partial",
+        "visible_start": 3,
+        "visible_end": 3
+      },
+      {
+        "field_name": "city",
+        "masking_type": "partial",
+        "visible_start": 2,
+        "visible_end": 1
+      },
+      {
+        "field_name": "state",
+        "masking_type": "none"
+      },
+      {
+        "field_name": "zip",
+        "masking_type": "partial",
+        "visible_start": 1,
+        "visible_end": 2
+      },
+      {
+        "field_name": "phone",
+        "masking_type": "partial",
+        "visible_start": 2,
+        "visible_end": 2
+      },
+      {
+        "field_name": "email",
+        "masking_type": "regex",
+        "masking_regex": "([^@]+)@.*",
+        "replacement": "****@masked.com"
+      },
+      {
+        "field_name": "cc",
+        "masking_type": "none"
+      },
+      {
+        "field_name": "cc_number",
+        "masking_type": "partial",
+        "visible_start": 4,
+        "visible_end": 4
+      },
+      {
+        "field_name": "cc_cvc",
+        "masking_type": "fixed",
+        "masking_value": "***"
+      },
+      {
+        "field_name": "cc_expiredate",
+        "masking_type": "scramble"
+      },
+      {
+        "field_name": "cc_type",
+        "masking_type": "none"
+      }
+    ],
+    "high": [
+      {
+        "field_name": "id",
+        "masking_type": "fixed",
+        "masking_value": "XXX-XX-XXX"
+      },
+      {
+        "field_name": "gender",
+        "masking_type": "fixed",
+        "masking_value": "*"
+      },
+      {
+        "field_name": "birthdate",
+        "masking_type": "scramble"
+      },
+      {
+        "field_name": "maiden_name",
+        "masking_type": "scramble"
+      },
+      {
+        "field_name": "lname",
+        "masking_type": "scramble"
+      },
+      {
+        "field_name": "fname",
+        "masking_type": "scramble"
+      },
+      {
+        "field_name": "address",
+        "masking_type": "scramble"
+      },
+      {
+        "field_name": "city",
+        "masking_type": "scramble"
+      },
+      {
+        "field_name": "state",
+        "masking_type": "fixed",
+        "masking_value": "**"
+      },
+      {
+        "field_name": "zip",
+        "masking_type": "fixed",
+        "masking_value": "*****"
+      },
+      {
+        "field_name": "phone",
+        "masking_type": "fixed",
+        "masking_value": "*******"
+      },
+      {
+        "field_name": "email",
+        "masking_type": "regex",
+        "masking_regex": ".*",
+        "replacement": "masked@domain.com"
+      },
+      {
+        "field_name": "cc",
+        "masking_type": "fixed",
+        "masking_value": "*"
+      },
+      {
+        "field_name": "cc_number",
+        "masking_type": "fixed",
+        "masking_value": "****************"
+      },
+      {
+        "field_name": "cc_cvc",
+        "masking_type": "fixed",
+        "masking_value": "***"
+      },
+      {
+        "field_name": "cc_expiredate",
+        "masking_type": "scramble"
+      }
+    ]
+  }
+}

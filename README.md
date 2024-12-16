@@ -1,18 +1,18 @@
-**User Guide for Database Masking Tool
-**This guide provides step-by-step instructions for using the Database Masking Tool, which helps transfer data between databases while applying various levels of masking to sensitive information.
+User Guide for Database Masking Tool
+This guide provides step-by-step instructions for using the Database Masking Tool, which helps transfer data between databases while applying various levels of masking to sensitive information.
 Features
 
-**Three Masking Levels:
-**Low: Minimal masking, suitable for non-sensitive data.
+Three Masking Levels:
+Low: Minimal masking, suitable for non-sensitive data.
 Medium: Moderate masking, suitable for semi-sensitive data.
 High: Full masking for data containing Personally Identifiable Information (PII).
 
-**Supported Database Types:
-**pg for PostgreSQL
+Supported Database Types:
+pg for PostgreSQL
 mariadb for MariaDB
 mysql for MySQL
 
-**Prerequisites**
+Prerequisites
 Ensure the following Python libraries are installed on your system:
 Faker
 psycopg2
@@ -21,8 +21,8 @@ These can be installed using pip:
 pip install Faker psycopg2 mysql
 
 
-**Usage Instructions
-**The tool is executed via a Python script named Database.py. Below is the general command format:
+Usage Instructions
+The tool is executed via a Python script named Database.py. Below is the general command format:
 python Database.py [source database type] [source database name] [destination database type] [destination database name] [level of masking]
 Command Parameters
 [source database type]: The type of the source database (pg, mariadb, mysql).
@@ -32,13 +32,13 @@ Command Parameters
 [level of masking]: The desired masking level (low, medium, high).
 
 
-**Example**
+Example
 Here is an example command to transfer data:
 Scenario: The source database is mysourcedb of type mysql. The destination database is pgdestdb of type postgres. You want to apply high PII masking.
 python Database.py mysql mysourcedb pg pgdestdb high
 
-**Explanation of the Command:
-**mysql: Source database type.
+Explanation of the Command:
+mysql: Source database type.
 mysourcedb: Source database name.
 pg: Destination database type.
 pgdestdb: Destination database name.
